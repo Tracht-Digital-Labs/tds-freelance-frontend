@@ -167,8 +167,10 @@
         }
       }
     ],
-    "cover": "astera.one",
-    "website": "https://astera.one/"
+    "image": "/images/projects/astera-2611.webp",
+    "website": "https://astera.one/",
+    "imageWidth": 960,
+    "imageHeight": 600
   },
   {
     "id": "licht-schatten-framework",
