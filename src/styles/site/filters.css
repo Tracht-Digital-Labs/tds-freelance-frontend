@@ -1,0 +1,164 @@
+/* ---------- Filter panel ---------- */
+.filter-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 16px;
+  margin-bottom: 18px;
+  padding: 20px;
+  border-radius: var(--tds-radius-card);
+  background: var(--color-soft);
+}
+.filter-panel label {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 160px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.filter-panel input,
+.filter-panel select {
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--tds-radius-input);
+  background: var(--color-card);
+  color: var(--color-ink);
+  font-size: 0.9rem;
+  font-weight: 400;
+  box-shadow: var(--tds-shadow-inset);
+}
+/* Dropdowns: same field geometry, a drawn chevron and, where the browser
+   allows it, a picker list in the site's card style. */
+.select-field {
+  position: relative;
+  display: block;
+}
+.select-field::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  rotate: 45deg;
+  translate: 0 -70%;
+  pointer-events: none;
+  transition:
+    rotate 160ms ease,
+    translate 160ms ease;
+}
+.select-field:has(select:open)::after {
+  rotate: 225deg;
+  translate: 0 -20%;
+}
+.filter-panel select {
+  appearance: none;
+  padding-right: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: border-color 160ms ease;
+}
+.filter-panel select:hover {
+  border-color: var(--color-primary);
+}
+@supports (appearance: base-select) {
+  .filter-panel select,
+  .filter-panel select::picker(select) {
+    appearance: base-select;
+  }
+  .filter-panel select::picker-icon {
+    display: none;
+  }
+  .filter-panel select selectedcontent {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .filter-panel select::picker(select) {
+    margin-block: 6px;
+    padding: 6px;
+    border: 1px solid var(--color-line);
+    border-radius: var(--tds-radius-card);
+    background: var(--color-card);
+    color: var(--color-ink);
+    box-shadow: 6px 6px 0 0 var(--tds-shadow-ink);
+  }
+  .filter-panel option {
+    min-height: 40px;
+    padding: 8px 12px;
+    border-radius: var(--tds-radius-input);
+    font-size: 0.9rem;
+  }
+  .filter-panel option::checkmark {
+    display: none;
+  }
+  .filter-panel option:hover,
+  .filter-panel option:focus-visible {
+    background: var(--color-soft);
+    outline: none;
+  }
+  .filter-panel option:checked {
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+    font-weight: 600;
+  }
+}
+.reset-filter {
+  min-height: 44px;
+  padding: 10px;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+[data-filter-count] {
+  margin-bottom: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+.no-results {
+  padding: 24px;
+  border-radius: var(--tds-radius-card);
+  background: var(--color-soft);
+}
+
+/* Quick-search chips inside the filter panel */
+.search-suggestions {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.search-suggestions > span {
+  margin-right: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.search-suggestions button {
+  min-height: 44px;
+  padding: 6px 14px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--tds-radius-chip);
+  background: var(--color-card);
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  transition: border-color 160ms ease;
+}
+.search-suggestions button:hover,
+.search-suggestions button:focus-visible {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}

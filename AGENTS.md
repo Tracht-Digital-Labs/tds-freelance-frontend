@@ -15,6 +15,7 @@ Chrome; Linux needs `npx playwright install --with-deps chromium`.
 - Production goes out only on the manual Release button; never run release from a normal push.
 - Native interactions must remain usable without JS; respect reduced motion and focus.
 - Any `dialog` must declare `margin:auto`.
+- Follows the TDS quality standard (`../tds-ops/standards/quality.md`): no AI slop, clean code.
 
 Read before editing: [architecture](ARCHITECTURE.md) for routes/runtime,
 [design](DESIGN-SYSTEM.md) for styling/motion, [content](CONTENT.md) for facts,

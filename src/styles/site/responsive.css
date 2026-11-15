@@ -1,0 +1,320 @@
+/* ---------- Responsive ---------- */
+@media (max-width: 1150px) {
+  :root,
+  [data-surface='marketing'] {
+    --jt-spine: 248px;
+  }
+  .identity {
+    padding-left: 20px;
+  }
+  .sidebar {
+    padding-inline: 10px;
+  }
+  footer {
+    padding-left: 20px;
+  }
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  }
+  .portrait-stage {
+    min-height: 480px;
+  }
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+  .feature-card {
+    min-height: 0;
+  }
+  .feature-card h2 {
+    margin-top: 16px;
+  }
+  .card-link {
+    margin-top: 0;
+  }
+  .timeline-row {
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 20px;
+  }
+  .detail-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+  .detail-note {
+    position: static;
+    max-width: 640px;
+  }
+  .tech-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tech-strip > .tiny-label {
+    max-width: none;
+  }
+}
+@media (max-width: 1000px) {
+  .hero,
+  .story-grid,
+  .project-intro {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero h1 {
+    font-size: clamp(3.75rem, 13vw, 6.5rem);
+  }
+  .portrait-stage {
+    width: 100%;
+    max-width: 520px;
+  }
+  .project-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0;
+    background: var(--color-surface-navy);
+  }
+  .identity {
+    min-width: 0;
+    padding: 14px 8px 14px 20px;
+    font-size: 1rem;
+  }
+  .identity small {
+    font-size: 0.72rem;
+  }
+  .header-actions {
+    flex: none;
+    gap: 6px;
+    padding: 8px 16px 8px 4px;
+    color: var(--jt-on-navy);
+  }
+  .header-actions :focus-visible {
+    outline-color: var(--color-accent-pink);
+  }
+  .lang-switch {
+    --jt-lang-track: #ffffff17;
+    --jt-lang-line: #ffffff33;
+    --jt-lang-thumb: var(--color-accent-pink);
+    --jt-lang-on-thumb: #0b0a07;
+    --jt-lang-off: var(--jt-on-navy-soft);
+  }
+  .theme-toggle:hover {
+    background: #ffffff17;
+  }
+  .contact-top {
+    justify-content: center;
+    min-width: 44px;
+    padding: 0;
+    background: transparent;
+    color: var(--jt-on-navy);
+    box-shadow: none;
+  }
+  .contact-top .contact-label {
+    display: none;
+  }
+  .contact-top > span:last-child {
+    font-size: 1.2rem;
+  }
+  .workspace {
+    display: block;
+  }
+  .sidebar {
+    padding: 0;
+    border-top: 1px solid #ffffff33;
+  }
+  .desktop-nav,
+  .sidebar-content,
+  .sidebar-note {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    color: var(--jt-on-navy);
+  }
+  .mobile-menu > summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 48px;
+    padding: 10px 20px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    list-style: none;
+  }
+  .mobile-menu > summary::-webkit-details-marker {
+    display: none;
+  }
+  .mobile-menu > summary:focus-visible {
+    outline-offset: -4px;
+  }
+  .mobile-menu[open] > summary > span {
+    transform: rotate(45deg);
+  }
+  .mobile-menu nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px 14px;
+    padding: 4px 20px 20px;
+  }
+  .mobile-menu nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    font-size: 0.95rem;
+  }
+  .mobile-menu nav a[aria-current] {
+    color: var(--jt-coral-soft);
+    font-weight: 700;
+  }
+  main {
+    padding: 32px 20px 56px;
+  }
+  .page-heading {
+    padding-bottom: 32px;
+  }
+  .values-grid,
+  .education-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .values-grid {
+    margin-top: 40px;
+  }
+  footer {
+    padding: 16px 20px;
+  }
+  footer > span:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 590px) {
+  .mobile-menu nav {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .identity {
+    gap: 10px;
+    padding-left: 16px;
+    font-size: 0.92rem;
+  }
+  .monogram {
+    font-size: 2.1rem;
+  }
+  .header-actions {
+    padding-right: 10px;
+  }
+  .language {
+    font-size: 0.7rem;
+  }
+  .lang-option {
+    min-width: 30px;
+    padding: 4px 6px;
+  }
+  .hero h1 {
+    font-size: clamp(3.75rem, 19vw, 5.5rem);
+  }
+  .hero .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.03em;
+  }
+  .portrait-stage {
+    min-height: 440px;
+  }
+  .tech-strip {
+    margin: 32px 0;
+  }
+  .tech-strip > div > span {
+    font-size: 0.75rem;
+  }
+  .feature-card {
+    padding: 22px;
+  }
+  .closing-line {
+    display: block;
+    margin-top: 40px;
+  }
+  .closing-line h2 {
+    margin-bottom: 20px;
+  }
+  .page-heading h1 {
+    font-size: clamp(2.25rem, 11vw, 3rem);
+  }
+  .timeline-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid var(--color-line);
+  }
+  .timeline-date {
+    padding: 0;
+    border: 0;
+  }
+  .timeline-dot {
+    left: -28px;
+    top: 4px;
+  }
+  .timeline-row > div:last-child {
+    padding: 20px;
+  }
+  .contact-details,
+  .contact-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .contact-details {
+    gap: 20px;
+  }
+  .contact-card {
+    min-height: 300px;
+    padding: 24px;
+  }
+  .filter-panel {
+    padding: 16px;
+  }
+  .filter-panel label {
+    min-width: 100%;
+  }
+  .filter-panel .reset-filter {
+    margin-left: auto;
+  }
+  .cert-intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+  .ai-sections article {
+    gap: 12px;
+  }
+  dialog {
+    padding: 45px 20px 20px;
+  }
+  dialog h2 {
+    font-size: 1.15rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  ::view-transition-group(*) {
+    animation: none !important;
+  }
+  :where(
+    .button,
+    .contact-top,
+    .closing-line > a,
+    .feature-card,
+    .project-card,
+    .skill-card,
+    .certificate-card,
+    .contact-card
+  ):where(:hover, :focus-visible, :focus-within, :active) {
+    translate: none;
+  }
+}

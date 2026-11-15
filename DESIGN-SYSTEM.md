@@ -12,7 +12,7 @@ fixed navy surfaces use `--color-surface-navy` so they retain contrast in both m
 The portfolio rose panels are a local personal composition with fixed dark text.
 
 The portfolio has its own typeface pair on purpose, so the person reads apart from
-the company site: Bricolage Grotesque (`--font-display`, overridden in `global.css`)
+the company site: Bricolage Grotesque (`--font-display`, overridden in `styles/site/foundation.css`)
 and Instrument Sans (`--font-body`). JetBrains Mono (`--font-mono`) stays from TDS and,
 with the colours, cards and hard shadows, ties the site to the brand. Fontsource faces are imported
 in Astro frontmatter, preserving font URL rebasing and emitting local assets.
@@ -43,3 +43,9 @@ button offsets, with translucent navy ink in light mode and the shared dark ink.
 Primary buttons use the shared primitive, including its coral shadow. Interactive
 cards lift 2px on hover/focus; buttons press into their shadow. Shadows are never
 animated, decorative/text elements stay flat, and reduced motion disables lifting.
+
+## Styles
+
+`src/styles/global.css` only imports: Tailwind, tds-shared and the site's own
+files under `src/styles/site/`, one per area, in cascade order (split
+2026-11-15). `@source` stays last; an `@import` after any other rule is dropped.

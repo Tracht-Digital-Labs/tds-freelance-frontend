@@ -384,7 +384,7 @@
     "en": "Human oversight remains essential"
   },
   "view-developers-remain-responsible-for-correctness-maintainability-and-the-overall-system": {
-    "de": "Entwickler tragen Verantwortung für Korrektheit, Wartbarkeit und das Gesamtsystem. Ungeprüft übernommener Code kann Fehler und Unsicherheit vervielfachen. Für mich ist KI deshalb ein Werkzeug in einem kontrollierten Entwicklungsprozess – mit nachvollziehbaren Entscheidungen und bewusster Freigabe.",
+    "de": "Entwickler tragen Verantwortung für Korrektheit, Wartbarkeit und das Gesamtsystem. Ungeprüft übernommener Code kann Fehler und Unsicherheit vervielfachen. Für mich ist KI deshalb ein Werkzeug in einem kontrollierten Entwicklungsprozess, mit nachvollziehbaren Entscheidungen und bewusster Freigabe.",
     "en": "Developers remain responsible for correctness, maintainability and the overall system. Unreviewed code can multiply mistakes and uncertainty. For me, AI belongs in a controlled development process, with traceable decisions and deliberate approval."
   },
   "view-this-page-describes-my-personal-approach-to-software-development": {

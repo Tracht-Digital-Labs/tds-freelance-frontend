@@ -1,0 +1,40 @@
+/* ---------- Hard shadows: no blur, never animated ---------- */
+:where(
+  .feature-card,
+  .detail-note,
+  .filter-panel,
+  .skill-card,
+  .project-card,
+  .certificate-card,
+  .contact-card
+) {
+  box-shadow: var(--tds-shadow-hard);
+}
+.portrait-stage,
+.quote-panel,
+.manifesto,
+.feature-card.navy,
+.contact-card.navy {
+  box-shadow: var(--jt-shadow-coral);
+}
+:where(.feature-card, .project-card, .certificate-card, .contact-card) {
+  transition: translate 160ms ease;
+}
+:where(.feature-card, .project-card, .certificate-card, .contact-card):where(
+    :hover,
+    :focus-within
+  ):not(:active) {
+  translate: -2px -2px;
+  box-shadow: var(--tds-shadow-hard-hover);
+}
+.feature-card.navy:where(:hover, :focus-within):not(:active),
+.contact-card.navy:where(:hover, :focus-within):not(:active) {
+  box-shadow: var(--jt-shadow-coral-hover);
+}
+
+[data-motion='low'] *,
+[data-motion='low'] *::before,
+[data-motion='low'] *::after {
+  animation: none !important;
+  transition: none !important;
+}

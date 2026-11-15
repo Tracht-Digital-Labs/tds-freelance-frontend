@@ -1,0 +1,239 @@
+/* ---------- Shell: a navy spine from the name down to the footer ---------- */
+.site-header {
+  display: grid;
+  grid-template-columns: var(--jt-spine) minmax(0, 1fr);
+  align-items: stretch;
+  border-bottom: 1px solid var(--color-line);
+}
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 22px 24px 28px;
+  background: var(--color-surface-navy);
+  color: var(--jt-on-navy);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.25;
+}
+.identity small {
+  display: block;
+  margin-top: 3px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.78rem;
+  color: var(--jt-on-navy-soft);
+}
+.monogram {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 2.6rem;
+  letter-spacing: -0.09em;
+  line-height: 1;
+  color: var(--jt-on-navy);
+}
+.monogram span {
+  color: var(--color-accent-pink);
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  padding: 16px var(--jt-gutter);
+  font-size: 0.875rem;
+}
+.language {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+/* A two-position slider: the thumb sits on the current language and only
+   slides to the other one once the link is pressed (client.ts flips
+   data-current on click); hover and focus leave it where it is. */
+.lang-switch {
+  --jt-lang-track: var(--color-soft);
+  --jt-lang-line: var(--color-line);
+  --jt-lang-thumb: var(--color-primary);
+  --jt-lang-on-thumb: var(--color-on-primary);
+  --jt-lang-off: var(--color-muted);
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3px;
+  border: 1px solid var(--jt-lang-line);
+  border-radius: var(--tds-radius-pill);
+  background: var(--jt-lang-track);
+}
+.lang-thumb {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  width: calc(50% - 3px);
+  border-radius: var(--tds-radius-pill);
+  background: var(--jt-lang-thumb);
+  transition: translate 220ms cubic-bezier(0.3, 0.7, 0.3, 1);
+}
+.lang-option {
+  position: relative;
+  min-width: 34px;
+  padding: 4px 8px;
+  text-align: center;
+  color: var(--jt-lang-off);
+  transition: color 220ms ease;
+}
+.lang-switch[data-current='en'] .lang-thumb {
+  translate: 100% 0;
+}
+.lang-switch[data-current='de'] [data-option='de'],
+.lang-switch[data-current='en'] [data-option='en'] {
+  color: var(--jt-lang-on-thumb);
+}
+.theme-toggle {
+  font-size: 1.4rem;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  transition: background-color 160ms ease;
+}
+.theme-toggle:hover {
+  background: var(--color-soft);
+}
+.contact-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 8px 20px;
+  border-radius: var(--tds-radius-btn);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-weight: 600;
+  box-shadow: 3px 3px 0 0 var(--color-accent-pink);
+  transition: translate 160ms ease;
+}
+.contact-top:hover {
+  translate: -1px -1px;
+}
+.contact-top:active {
+  translate: 2px 2px;
+  box-shadow: none;
+}
+.workspace {
+  display: grid;
+  grid-template-columns: var(--jt-spine) minmax(0, 1fr);
+}
+.sidebar {
+  padding: 28px 16px 32px;
+  background: var(--color-surface-navy);
+  color: var(--jt-on-navy-soft);
+}
+.sidebar-content {
+  position: sticky;
+  top: 20px;
+  max-height: calc(100dvh - 40px);
+  overflow: hidden auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff55 transparent;
+}
+.desktop-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.desktop-nav a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: var(--tds-radius-card);
+  font-size: 0.95rem;
+  transition: background-color 160ms ease;
+}
+.nav-title {
+  min-width: 0;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+.desktop-nav a:hover {
+  background: #ffffff17;
+  color: var(--jt-on-navy);
+}
+.desktop-nav a[aria-current] {
+  background: var(--color-card);
+  color: var(--color-primary);
+  font-weight: 700;
+  box-shadow: 3px 3px 0 0 #ff7a9c;
+}
+.desktop-nav a:focus-visible {
+  outline-offset: -3px;
+}
+.desktop-nav a[aria-current]:focus-visible {
+  outline-color: var(--color-accent);
+}
+.sidebar-note {
+  margin: clamp(24px, 5vh, 56px) 12px 4px;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff33;
+}
+.sidebar-note .tiny-label {
+  color: var(--jt-coral-soft);
+}
+.sidebar-note p {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  margin: 14px 0;
+  color: var(--jt-on-navy);
+}
+.sidebar-note > a {
+  display: inline-block;
+  padding: 6px 0;
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.mobile-menu {
+  display: none;
+}
+main {
+  width: 100%;
+  max-width: calc(var(--jt-content) + 2 * var(--jt-gutter));
+  min-width: 0;
+  min-height: 78vh;
+  padding: clamp(36px, 5vw, 64px) var(--jt-gutter) 72px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  padding: 20px var(--jt-gutter) 20px 28px;
+  background: var(--color-surface-navy);
+  border-top: 1px solid #ffffff33;
+  color: var(--jt-on-navy-soft);
+  font-size: 0.82rem;
+}
+footer > div {
+  display: flex;
+  gap: 20px;
+}
+footer a {
+  display: inline-block;
+  padding: 8px 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

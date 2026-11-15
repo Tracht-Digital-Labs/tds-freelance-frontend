@@ -1,0 +1,63 @@
+/* ---------- Contact ---------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+  padding: 30px;
+  border-radius: var(--tds-radius-card);
+}
+.contact-card h2 {
+  margin: 24px 0 14px;
+  font-size: clamp(1.75rem, 3vw, 2.75rem);
+}
+.contact-card p {
+  max-width: 26rem;
+}
+.contact-arrow {
+  margin: auto 0 14px;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+  margin: 56px 0 8px;
+  padding-top: 32px;
+  border-top: 3px solid var(--color-primary);
+}
+.contact-details h2 {
+  margin: 12px 0 14px;
+}
+.contact-details p {
+  margin: 0;
+  color: var(--color-muted);
+}
+.contact-details > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.contact-details a {
+  padding-block: 8px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.1rem, 1.7vw, 1.4rem);
+  overflow-wrap: anywhere;
+}
+.contact-details a:hover {
+  color: var(--color-accent);
+}
+.social-links {
+  display: flex;
+  gap: 24px;
+}
+.social-links a {
+  font-size: 1rem;
+}

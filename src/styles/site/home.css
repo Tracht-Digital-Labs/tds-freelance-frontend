@@ -1,0 +1,183 @@
+/* ---------- Home ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 64px);
+  align-items: stretch;
+}
+.hero-copy {
+  align-self: center;
+}
+.hero .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 14px 5px 10px;
+  border-radius: var(--tds-radius-pill);
+  background: var(--color-soft);
+  color: var(--color-accent);
+}
+.hero h1 {
+  margin: 26px 0 0;
+  font-size: clamp(3.75rem, 7vw, 7.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 0.94;
+  color: var(--color-primary);
+}
+.hero h1 > span {
+  display: inline-block;
+  padding-left: 0.42em;
+}
+.pink-dot {
+  color: var(--color-accent-pink);
+}
+.hero h2 {
+  margin-bottom: 10px;
+  font-size: clamp(1.25rem, 1.7vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+}
+.hero-copy > p {
+  max-width: 34rem;
+  color: var(--color-muted);
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+  margin-top: 28px;
+}
+.portrait-stage {
+  position: relative;
+  min-height: 540px;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: var(--tds-radius-card);
+  background: var(--color-surface-navy);
+}
+/* Constructed quarter circle behind the shoulder, in the brand's second colour. */
+.portrait-orbit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 78%;
+  aspect-ratio: 1;
+  border-radius: 100% 0 0 0;
+  background: var(--jt-bordeaux);
+}
+.portrait-stage > img {
+  position: absolute;
+  right: 0;
+  bottom: 74px;
+  width: 100%;
+  height: calc(100% - 96px);
+  object-fit: contain;
+  object-position: right bottom;
+  z-index: 1;
+}
+.portrait-caption {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-height: 74px;
+  justify-content: center;
+  padding: 12px 22px;
+  background: var(--color-surface-navy);
+  color: var(--jt-on-navy);
+}
+.portrait-caption .tiny-label {
+  color: var(--jt-coral-soft);
+}
+.portrait-caption > span:last-child {
+  font-size: 0.9rem;
+}
+.tech-strip {
+  display: flex;
+  align-items: center;
+  gap: 16px 28px;
+  margin: 44px 0;
+  padding: 18px 0;
+  border-block: 1px solid var(--color-line);
+}
+.tech-strip > .tiny-label {
+  max-width: 150px;
+  flex-shrink: 0;
+  color: var(--color-muted);
+}
+.tech-strip > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tech-strip > div > span {
+  padding: 5px 14px;
+  border-radius: var(--tds-radius-chip);
+  background: var(--color-soft);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 330px;
+  padding: 26px;
+  border-radius: var(--tds-radius-card);
+}
+.feature-card h2 {
+  margin: 28px 0 14px;
+  font-size: clamp(1.5rem, 2.1vw, 1.95rem);
+}
+.feature-card p {
+  margin-bottom: 22px;
+  font-size: 0.97rem;
+}
+.card-link {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid currentcolor;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+.closing-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 56px;
+  padding: clamp(28px, 4vw, 48px);
+  border-radius: var(--tds-radius-card);
+  background: var(--jt-bordeaux);
+  color: #fff;
+}
+.closing-line h2 {
+  max-width: 34rem;
+  margin: 0;
+  font-size: clamp(1.75rem, 3.2vw, 3rem);
+}
+.closing-line > a {
+  flex: none;
+  min-height: 48px;
+  padding: 11px 24px;
+  border-radius: var(--tds-radius-btn);
+  background: #fff;
+  color: var(--jt-bordeaux);
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 3px 3px 0 0 #ff7a9c;
+  transition: translate 160ms ease;
+}
+.closing-line > a:hover {
+  color: var(--jt-bordeaux);
+  translate: -1px -1px;
+}

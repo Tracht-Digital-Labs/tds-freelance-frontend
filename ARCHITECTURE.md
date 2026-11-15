@@ -22,8 +22,10 @@
 
 ## Implementation
 
-`src/data/content.ts` owns stable IDs, language routes, profile, career, education,
-skills, project schemas and approved records. `certificates.json` owns credential
+`src/data/content.ts` owns the profile, views, language routes and the content
+checks; it re-exports `locale.ts`, `career.ts` (career, education), `skills.ts`
+(with the inventory in `skillTree.ts`), `certificates.ts` and `projects.ts`
+(split 2026-11-15), which own the schemas and approved records. `certificates.json` owns credential
 facts. `projects.json` contains additional approved work, including the main-site
 references and design studies, IdleArcade and the in-development JavaScript light/
 shadow framework. Source evidence is the public reference catalogue and GitHub

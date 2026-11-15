@@ -184,7 +184,7 @@ const schema = {
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content={`${profile.name} — ${profile.role[lang]}`}
+      content={`${profile.name}: ${profile.role[lang]}`}
     />
     <meta name="twitter:card" content="summary_large_image" />
     <link
@@ -217,7 +217,7 @@ const schema = {
       <a
         href={pathFor('home', lang)}
         class="identity"
-        aria-label={`Julian Tracht — ${lang === 'de' ? 'Startseite' : 'Home'}`}
+        aria-label={`Julian Tracht: ${lang === 'de' ? 'Startseite' : 'Home'}`}
       >
         <span class="monogram" aria-hidden="true">
           jt<span>.</span>

@@ -1,0 +1,92 @@
+/* ---------- Shared small parts ---------- */
+.tiny-label,
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  line-height: 1.55;
+}
+.tiny-label {
+  text-transform: uppercase;
+}
+.page-rule {
+  display: block;
+  margin-top: 28px;
+}
+.button {
+  min-height: 48px;
+  padding: 12px 24px;
+  border-radius: var(--tds-radius-btn);
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  transition: translate 160ms ease;
+}
+.button.primary {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+.button.secondary {
+  background: var(--color-soft);
+  color: var(--color-ink);
+}
+.text-link {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  text-decoration-color: var(--color-accent-pink);
+}
+.text-link:hover {
+  color: var(--color-accent);
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 18px 0;
+}
+.tags > span {
+  padding: 3px 10px;
+  border-radius: var(--tds-radius-chip);
+  background: var(--color-soft);
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+.value-number {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--color-accent);
+}
+.subtle-note {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  margin: 22px 0;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+/* Tone fills */
+.navy {
+  background: var(--color-surface-navy);
+  color: var(--jt-on-navy);
+}
+.soft {
+  background: var(--color-soft);
+}
+.rose {
+  background: #f4dce3;
+  color: #421127;
+}

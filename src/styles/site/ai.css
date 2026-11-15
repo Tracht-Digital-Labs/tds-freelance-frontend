@@ -1,0 +1,44 @@
+/* ---------- AI ---------- */
+.manifesto {
+  padding: clamp(28px, 4vw, 48px);
+  border-radius: var(--tds-radius-card);
+  background: var(--color-surface-navy);
+  color: var(--jt-on-navy);
+}
+.manifesto .tiny-label {
+  color: var(--jt-coral-soft);
+}
+.manifesto h2 {
+  max-width: 820px;
+  margin: 18px 0 20px;
+  font-size: clamp(2rem, 3.6vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.04;
+}
+.manifesto p {
+  max-width: 46rem;
+  margin: 0;
+  line-height: 1.7;
+  color: var(--jt-on-navy-soft);
+}
+.ai-sections {
+  margin-top: 24px;
+}
+.ai-sections article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.ai-sections h2 {
+  margin-bottom: 12px;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
+}
+.ai-sections p {
+  max-width: 46rem;
+  margin: 0;
+  line-height: 1.7;
+  color: var(--color-muted);
+}
