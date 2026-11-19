@@ -2,7 +2,7 @@
 
 1. Install Node 24 and npm 11. Clone this repository.
 2. Export `NPM_TOKEN` in the current terminal using a credential authorized for
-   `read:packages` in Tracht-Digital-Solutions. Never write a real token to `.npmrc`.
+   `read:packages` in Tracht-Digital-Labs. Never write a real token to `.npmrc`.
    The committed `.npmrc` contains an environment reference only. In Actions,
    grant this repository access to tds-shared or set the `NPM_TOKEN` secret.
 3. Run `npm ci`. The lockfile pins versions and includes optional platform packages.

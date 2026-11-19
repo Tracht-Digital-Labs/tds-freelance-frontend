@@ -17,7 +17,7 @@ CI builds on main and pull requests; production is **manual only**.
   approved portfolio entries per language (62 public URLs), with client work,
   own projects, demos, design studies and work in development clearly labelled.
 - Shared TDS tokens, primitives, theme bootstrap and preference handling from
-  the pinned private package `@tracht-digital-solutions/tds-shared@0.55.1`.
+  the pinned private package `@tracht-digital-labs/tds-shared@0.55.1`.
 - Local fonts, responsive portrait, search/category/context/evidence filters,
   credential gallery, native accessible dialogs and progressive enhancement.
 - Canonicals, language pairs, sitemap, social previews, semantic HTML and JSON-LD.
@@ -56,7 +56,7 @@ of deployment. Further project references require individual publication approva
 |---|---|---|
 | Node.js | 24 in CI | `.github/workflows/quality.yml` |
 | astro | 7.3.8 | `package.json` |
-| @tracht-digital-solutions/tds-shared | 0.62.0 | `package.json` |
+| @tracht-digital-labs/tds-shared | 0.62.0 | `package.json` |
 | zod | 4.6.7 | `package.json` |
 | typescript | 6.0.3 | `package.json` |
 | @playwright/test | 1.62.1 | `package.json` |

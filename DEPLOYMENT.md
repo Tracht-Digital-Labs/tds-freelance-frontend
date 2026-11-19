@@ -2,7 +2,7 @@
 
 ## Current boundary
 
-Source lives at `Tracht-Digital-Solutions/tds-freelance-frontend`, default branch
+Source lives at `Tracht-Digital-Labs/tds-freelance-frontend`, default branch
 `main`. This is a static Astro site, not a Passenger/Node application. Main pushes
 and PRs run quality.yml and upload the static build; **they do not deploy**.
 Only manual `release.yml` publishes `release` and calls a hosting webhook.

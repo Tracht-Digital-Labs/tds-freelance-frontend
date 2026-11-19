@@ -23,7 +23,7 @@
 - npm security audit reports zero known vulnerabilities for the pinned install.
 
 GitHub Linux CI also passed all gates, including the performance audit and artifact
-upload: [Quality gates run](https://github.com/Tracht-Digital-Solutions/tds-freelance-frontend/actions/runs/38454124519).
+upload: [Quality gates run](https://github.com/Tracht-Digital-Labs/tds-freelance-frontend/actions/runs/38454124519).
 The `static-site` artifact contains the verified static document root and a commit stamp.
 
 ## Performance budget and measurement

@@ -51,7 +51,7 @@ export const projects: Project[] = z.array(projectSchema).parse([
     tech: ['Astro', 'TypeScript', 'TDS Designsystem', 'GitHub Actions'],
     website: 'https://tracht-digital.de',
     github:
-      'https://github.com/Tracht-Digital-Solutions/tds-landingpage-frontend',
+      'https://github.com/Tracht-Digital-Labs/tds-landingpage-frontend',
     sections: [
       {
         title: l('Projekt', 'Project'),
@@ -90,7 +90,7 @@ export const projects: Project[] = z.array(projectSchema).parse([
     ),
     tech: ['Astro', 'TypeScript', 'Tool-Pakete', 'Browser APIs'],
     website: 'https://tools.tracht-digital.de',
-    github: 'https://github.com/Tracht-Digital-Solutions/tds-tools-frontend',
+    github: 'https://github.com/Tracht-Digital-Labs/tds-tools-frontend',
     sections: [
       {
         title: l('Projekt', 'Project'),

@@ -2,11 +2,11 @@ import {
   applyThemePreference,
   currentTheme,
   readThemePreference,
-} from '@tracht-digital-solutions/tds-shared/theme';
+} from '@tracht-digital-labs/tds-shared/theme';
 import {
   rememberLocale,
   readPrefs,
-} from '@tracht-digital-solutions/tds-shared/prefs';
+} from '@tracht-digital-labs/tds-shared/prefs';
 import { navigate } from 'astro:transitions/client';
 /**
  * Lower-case, fold diacritics and turn separators into spaces, keeping the

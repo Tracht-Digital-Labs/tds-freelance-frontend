@@ -1,7 +1,7 @@
 @import 'tailwindcss/index.css';
-@import '@tracht-digital-solutions/tds-shared/styles/base.css';
-@import '@tracht-digital-solutions/tds-shared/styles/primitives.css';
-@import '@tracht-digital-solutions/tds-shared/styles/surfaces/marketing.css';
+@import '@tracht-digital-labs/tds-shared/styles/base.css';
+@import '@tracht-digital-labs/tds-shared/styles/primitives.css';
+@import '@tracht-digital-labs/tds-shared/styles/surfaces/marketing.css';
 
 /* The site's own rules, one file per area, in cascade order (split 2026-11-15). */
 @import './site/foundation.css';

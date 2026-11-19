@@ -1271,7 +1271,7 @@
     "image": "/images/projects/gitea-claude-plugin-2611.webp",
     "imageWidth": 1200,
     "imageHeight": 750,
-    "github": "https://github.com/Tracht-Digital-Solutions/gitea-claude-plugin"
+    "github": "https://github.com/Tracht-Digital-Labs/gitea-claude-plugin"
   },
   {
     "approved": true,
@@ -1307,7 +1307,7 @@
       "Gitea API"
     ],
     "cover": "GITEA / MOBILE",
-    "github": "https://github.com/Tracht-Digital-Solutions/TeaPilot",
+    "github": "https://github.com/Tracht-Digital-Labs/TeaPilot",
     "sections": [
       {
         "title": {
@@ -1365,7 +1365,7 @@
       "Docker"
     ],
     "cover": "MCP / GITEA",
-    "github": "https://github.com/Tracht-Digital-Solutions/gitea-chatgpt-plugin",
+    "github": "https://github.com/Tracht-Digital-Labs/gitea-chatgpt-plugin",
     "sections": [
       {
         "title": {
@@ -1420,7 +1420,7 @@
       "Claude Code"
     ],
     "cover": "PLUGINS / CI",
-    "github": "https://github.com/Tracht-Digital-Solutions/claude-plugin-marketplace",
+    "github": "https://github.com/Tracht-Digital-Labs/claude-plugin-marketplace",
     "sections": [
       {
         "title": {
